@@ -1,0 +1,638 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: boder-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: Montserrat;
+}
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin-top: -8vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#page1 > img {
+  height: 100vh;
+  object-position: center;
+  object-fit: cover;
+}
+.p1center {
+  height: 25vh;
+  width: 25vw;
+
+  /* background-color: red; */
+  z-index: 9;
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.p1center > a {
+  text-decoration: none;
+  font-size: 2vh;
+  color: white;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 {
+  height: 70vh;
+  width: 100vw;
+  background-color: #1c1c1c;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page2 > h6 {
+  color: #a1898d;
+  margin-bottom: 2vh;
+}
+#page2 > h2 {
+  color: whitesmoke;
+}
+.musicp2 {
+  width: 50vw;
+  /* background/-color: red; */
+}
+.music > audio {
+    height: 5vh;
+    width:80vw;
+}
+/* audio::-webkit-media-controls-panel {
+  background-color: white;
+  width: 80vw;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: white;
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-timeline {
+  background-color: #b1d4e0;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+audio::-webkit-media-controls-current-time-display {
+  color: #fff;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+} */
+.p2center {
+  height: 45vh;
+  margin-top: 2vh;
+  width: 65vw;
+  position: relative;
+  /* background-color: red; */
+  display: flex;
+}
+.p2centerl {
+  height: 45vh;
+  width: 35vw;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#p2img {
+  /* width: 25vw; */
+  scale: 0.6;
+  object-fit: cover;
+  object-position: center;
+  /* background-color: black; */
+}
+.p2centerr {
+  height: 40vh;
+  padding: 2.5vh 0;
+  width: 45vw;
+  /* background-color: white; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.musicp2 {
+  height: 6vh;
+  width: 33vw;
+  padding: 0 1vw;
+  /* border: 1px solid black; */
+  position: relative;
+  color: whitesmoke;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.music {
+  width: 22vw;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  /* color: whitesmoke; */
+  justify-content: space-between;
+}
+
+.musicp2:hover {
+  background-color: rgba(0, 0, 0, 0.427);
+  cursor: pointer;
+}
+#page3 {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #262626;
+  justify-content: center;
+}
+
+#page3 > h5 {
+  margin-bottom: 2vh;
+  color: #967171;
+  font-size: 1.5vh;
+}
+#page3 > p {
+  font-weight: 400;
+  width: 70vw;
+  text-align: center;
+  font-size: 2.15vh;
+  margin-top: 5vh;
+}
+#page3 > h4 {
+  margin: 5vh 0;
+  /* width: 30vh; */
+  font-size: 2.5vh;
+  line-height: 2;
+  text-align: center;
+}
+#page3 > button {
+  height: 5vh;
+  width: 15vh;
+  font-size: 1.5vh;
+  font-weight: 700;
+  border: none;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  color: whitesmoke;
+  background-color: #1c1c1c;
+}
+#page3 > button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+#page4 {
+  height: 85vh;
+  width: 100vw;
+  background-image: url("https://wp.nkdev.info/khaki/demo-band/wp-content/uploads/sites/7/2017/05/image-111.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#overlayp4 {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.354);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.p4center {
+  height: 50vh;
+  width: 60vw;
+  background-color: transparent;
+  margin-top: 2vh;
+}
+.tourdates {
+  height: 12vh;
+  width: 60vw;
+  background-color: transparent;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.306);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.p4center :nth-child(4) {
+  border: none;
+}
+.p4ticketprice {
+  width: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: green; */
+}
+.p4ticketprice > button {
+  height: 4vh;
+  border-radius: 2vh;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.357);
+  color: white;
+  font-weight: 500;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 8vw;
+  position: relative;
+}
+.p4ticketprice > button > i {
+  position: absolute;
+  color: white;
+  left: 102%;
+  font-size: 1.8vh;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+.p4ticketprice > button:hover i {
+  left: 80%;
+}
+#overlayp4 > button {
+  height: 4vh;
+  width: 15vh;
+  border-radius: 2vh;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255);
+  color: white;
+}
+#page5 {
+  height: 140vh;
+  width: 100vw;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+#page5 > h6 {
+  color: #967171;
+}
+.p5center {
+  height: 100vh;
+  margin: 5vh;
+  width: 70vw;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.p5div {
+  height: 98vh;
+  width: 22vw;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.p5img1 {
+  height: 30vh;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.p5img1 > img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.p5img1:hover img {
+  scale: 1.1;
+  width: 30vw;
+}
+.p5div2 {
+  height: 98vh;
+  width: 20vw;
+  position: relative;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.p5div2 > .p5img1 {
+  height: 28vh;
+  width: 20vw;
+}
+.p5div3 {
+  height: 98vh;
+  width: 20vw;
+  position: relative;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#p5img11 {
+  height: 60vh;
+}
+#page6 {
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+#page6 > h6 {
+  color: #aa7e7e;
+}
+.p6center {
+  height: 50vh;
+  margin-top: 2vh;
+  width: 65vw;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.p6img {
+  height: 42vh;
+  width: calc(22vw - 4vh);
+  /* border: 1px solid black; */
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.991);
+  position: relative;
+}
+.p6img > img {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.p6img:hover img {
+  scale: 0.8;
+}
+.p6img:hover .p6divtxt {
+  opacity: 1;
+}
+.p6divtxt {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: rgb(239, 190, 190);
+  mix-blend-mode: hard-light;
+  z-index: 9;
+  display: flex;
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p6divtxt > h1 {
+  width: 15vw;
+  color: whitesmoke;
+  text-align: center;
+}
+.p6divtxt > button {
+  height: 4vh;
+  width: 6vw;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-top: 3vh;
+  background: transparent;
+}
+
+#page7 {
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  justify-content: space-around;
+}
+#page7 > h1 {
+  margin-top: 2vh;
+}
+.p7center {
+  height: 60vh;
+  width: 78vw;
+  /* padding: 0 1vw ;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 2vh;
+  /* background-color: red; */
+}
+
+.p7img {
+  height: 29vh;
+  width: 24vw;
+  /* border: 1px solid black; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p7img > a {
+  text-decoration: none;
+  font-size: 2vh;
+  color: white;
+  height: 8vh;
+  position: absolute;
+  width: 8vh;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  #page1 {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+  }
+  .p1center {
+    height: 25vh;
+    width: 80vw;
+    text-align: center;
+    /* background-color: red; */
+  }
+  #page2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .p2center {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+  }
+  .p2centerr {
+    /* background-color: red; */
+    width: 100vw;
+    position: relative;
+  }
+  .musicp2 {
+    width: 80vw;
+    height: 15vh;
+    padding: 0 2vh;
+  }
+  .music {
+    width: 60vw;
+  }
+  #page3 {
+    height: 100vh;
+    width: 100vw;
+  }
+  #page3 > p {
+    width: 80vw;
+    text-align: justify;
+  }
+  #page3 > h4 {
+    text-align: justify;
+    font-size: 2vh;
+  }
+  .p4center {
+    /* background-color: red; */
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+  .tourdates {
+    /* background-color: blue; */
+    height: 10vh;
+    width: 95vw;
+    display: none;
+  }
+
+  .p4ticketprice {
+    font-size: 1.2vh;
+  }
+  .p4ticketprice {
+    /* background-color: red; */
+    width: 42vw;
+  }
+  .p4ticketprice > button {
+    width: 30vw;
+    margin-left: 1vh;
+  }
+  #overlayp4 > button {
+    margin-top: 5vh;
+  }
+  #page5 {
+    height: fit-content;
+    padding: 5vh 0;
+    width: 100vw;
+    /* background-color: red; */
+  }
+  .p5center {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .p5div {
+    width: 80vw;
+  }
+  .p5div2 {
+    width: 80vw;
+  }
+  .p5div2 > .p5img1 {
+    width: 80vw;
+  }
+  .p5div3 {
+    width: 80vw;
+  }
+  #page6 {
+    height: fit-content;
+    padding: 5vh 0;
+    width: 100vw;
+    position: relative;
+  }
+  .p6center {
+    height: 120vh;
+    width: 80vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .p6img {
+    height: 32vh;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p6divtxt {
+    height: 20vh;
+    width: 50vw;
+    text-align: center;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p6divtxt > h1 {
+    /* background-color: red; */
+    width: 50vw;
+    text-align: center;
+  }
+  .p6divtxt > button {
+    width: 20vw;
+  }
+  #page7 {
+    height: fit-content;
+    width: 100vw;
+    position: relative;
+  }
+  .p7center {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 0;
+    /* background-color: red; */
+  }
+  .p7img {
+    width: 700vw;
+    margin-bottom: 2vh;
+  }
+}

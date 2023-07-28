@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    /* overflow-y: hidden; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: black;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  } 
+  
+  
+  
+  
+  
+  .street{
+    width: 100%;
+    height: 20vmax;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 7vmax;
+  
+    
+    
+  }
+  
+  .container h6{
+    background-color: rgb(245, 168, 3);
+    transition: 0.5s;
+    border: 1px solid #F86F03 ;
+    color: white;
+    cursor: pointer;
+  }
+  .container h6:hover{
+        border: 1px solid #F86F03;
+        background-color: white;
+        color: #F86F03;
+  }
+  .imagesizes{
+    width: 28vmax;
+    height: 16vmax;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+  .name{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .name:hover{
+    color: #F86F03;
+  }
+  .para{
+    width: 25vmax;
+    text-align: center;
+    font-size: 1vmax;
+    color: gray;
+  }
+  .icontext{
+    font-size: 1vmax;
+    color: gray;
+  }
+  @media (max-width: 600px) {
+    .street{
+      height: 35vmax;
+    }
+    .para{
+      width: 44vmax;
+      font-size: 1.5vmax;
+    }
+    .icontext{
+      font-size: 1.5vmax;
+    }
+    .imagesizes{
+      width: 44vmax;
+      height: 23vmax; 
+      position: relative;
+    }
+    
+    .all{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  
+    }
+  }
+  
+  
+  
+  /* PAGETWO */
+  
+  .paragraph{
+    font-size: 1vmax;
+  }
+  .business a{
+    text-decoration: none;
+    margin-left: 1vmax;
+    color: rgb(92, 83, 83);
+    background-color: rgb(172, 164, 164);
+    font-size: 0.8vmax;
+    padding: 0.4vmax;
+    transition: 0.5s;
+  
+  }
+  .business a:hover{
+    background-color:  #f8bf03;
+    color: white;
+  }
+  .imagedown{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+    
+  }
+  .imagedown img{
+    width: 28vmax;
+    height: 30vmax;
+    
+    border-radius: 0.5vmax;
+    
+  }
+  
+   .imagetext{
+     margin-left: 2vmax;
+    transform: translateY(-15vmax);
+    margin-top: -17vmax;
+    color: white;
+  }
+  
+  .hover{
+    width: 25vmax;
+    opacity: 0;
+  }
+   .hover:hover {
+  opacity: 1;
+  
+  }
+  .icon i{
+    background-color: gray;
+    transition: 0.5s;
+  }
+  .icon i:hover{
+    background-color: #f8bf03;
+    cursor: pointer;
+  }
+  .speakers li{
+  list-style: none;
+  transition: 0.5s;
+  border: 1px solid rgb(238, 233, 233);
+  border-bottom: 3px solid rgb(238, 233, 233);
+  
+  
+  }
+  .speakers li:hover{
+    border-bottom: 3px solid #f8bf03;
+  }
+  
+  
+  
+  .left{
+    width: 60%;
+  }
+  .right{
+    width: 40%;
+  }
+  .photo{
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateX(4vmax);
+    
+  }
+  .photo img{
+    width: 30%;
+    height: 18vmax;
+  
+  }
+  .three{
+    padding: 1vmax;
+    border: 1px solid rgb(245, 168, 3);
+    margin-right: 0.5vmax;
+  }
+   
+  .three:hover{
+    background-color: rgb(245, 168, 3);
+    color: white;
+  }
+  .righttop{
+    width: 80%;
+  }
+  .righttop i {
+    font-size: 3vmax;
+    color:rgb(245, 168, 3) ;
+  }
+  .righttop button{
+    background-color: rgb(245, 168, 3);
+    border: none;
+    padding: 1vmax 4vmax;
+    margin-bottom: 3vmax;
+    
+    color: white;
+  
+  }
+  .rightdown{
+    width: 80%;
+  }
+  .rightdown span{
+    color: rgb(245, 168, 3);
+  }
+  
+  
+  @media (max-width: 600px) {
+    .maindiv{
+      flex-direction: column;
+    }
+    .right{
+      width: 100%;
+    }
+    .imagedown img{
+      width: 34vmax;
+      height: 39vmax;
+    }
+    .imagetext{
+      transform: translateY(-22vmax);
+   }
+    .hover{
+      width: 30vmax;
+    }
+    .photo img{
+      width: 100%;
+      height: 25vmax;
+      margin-right: 3vmax;
+    
+    }
+    .paragraph{
+      font-size: 1.5vmax;
+    }
+    .business a{
+      margin-left: 0vmax;
+      margin-right: 1vmax;
+     font-size: 1.2vmax;
+     
+    }
+  }
